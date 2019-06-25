@@ -3,6 +3,9 @@ export const themes = [
     name: 'light'
   },
   {
+    name: 'dracula'
+  },
+  {
     name: 'dark'
   },
   {

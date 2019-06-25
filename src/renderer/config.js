@@ -14,5 +14,5 @@ export const DEFAULT_STYLE = {
   theme: 'light'
 }
 
-export const railscastsThemes = ['dark', 'material-dark']
+export const railscastsThemes = ['dark', 'material-dark', 'dracula']
 export const oneDarkThemes = ['one-dark']

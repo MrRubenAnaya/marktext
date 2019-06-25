@@ -1,5 +1,5 @@
 import { THEME_STYLE_ID, COMMON_STYLE_ID, DEFAULT_CODE_FONT_FAMILY, oneDarkThemes, railscastsThemes } from '../config'
-import { dark, graphite, materialDark, oneDark, ulysses } from './themeColor'
+import { dracula, dark, graphite, materialDark, oneDark, ulysses } from './themeColor'
 import { isLinux } from './index'
 import elementStyle from 'element-ui/lib/theme-chalk/index.css'
 
@@ -51,6 +51,7 @@ export const addThemeStyle = theme => {
   const isCmOneDark = oneDarkThemes.includes(theme)
   const isDarkTheme = isCmOneDark || isCmRailscasts
   let themeStyleEle = document.querySelector(`#${THEME_STYLE_ID}`)
+  console.log(themeStyleEle)
   if (!themeStyleEle) {
     themeStyleEle = document.createElement('style')
     themeStyleEle.id = THEME_STYLE_ID
@@ -61,10 +62,15 @@ export const addThemeStyle = theme => {
     case 'light':
       themeStyleEle.innerHTML = ''
       break
+    case 'dracula':
+      console.log('dracula theme enabled')
+      themeStyleEle.innerHTML = patchTheme(dracula())
+      break
     case 'dark':
       themeStyleEle.innerHTML = patchTheme(dark())
       break
     case 'material-dark':
+      console.log('material theme enabled')
       themeStyleEle.innerHTML = patchTheme(materialDark())
       break
     case 'ulysses':

@@ -14,6 +14,14 @@ export default function (userPreference) {
         actions.selectTheme('light')
       }
     }, {
+      label: 'Dracula',
+      type: 'radio',
+      id: 'dracula',
+      checked: theme === 'dracula',
+      click (menuItem, browserWindow) {
+        actions.selectTheme('dracula')
+      }
+    }, {
       label: 'Dark',
       type: 'radio',
       id: 'dark',

@@ -94,6 +94,13 @@ export default {
       box-sizing: border-box;
       border: 1px solid rgba(240, 240, 240, .3);
       border-radius: 5px;
+      &.dracula {
+        color: rgba(255, 255, 255, .7);
+        background: #282a36;
+        & a {
+          color: #409eff;
+        }
+      }
       &.dark {
         color: rgba(255, 255, 255, .7);
         background: #282828;

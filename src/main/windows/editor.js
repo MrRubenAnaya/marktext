@@ -400,6 +400,8 @@ class EditorWindow extends BaseWindow {
     // Later with custom themes we need the background color (e.g. from meta information) and wait
     // that the window is loaded and then pass theme data to the renderer.
     switch (theme) {
+      case 'dracula':
+        return '#282a36'
       case 'dark':
         return '#282828'
       case 'material-dark':

@@ -94,6 +94,7 @@ class Preference extends EventEmitter {
   }
 
   getAll () {
+    console.log(this.store.store)
     return this.store.store
   }
 

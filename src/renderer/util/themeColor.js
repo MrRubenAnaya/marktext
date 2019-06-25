@@ -1,4 +1,5 @@
 import darkTheme from  '../assets/themes/dark.theme.css'
+import draculaTheme from '../assets/themes/dracula.theme.css'
 import graphiteTheme from '../assets/themes/graphite.theme.css'
 import materialDarkTheme from '../assets/themes/material-dark.theme.css'
 import oneDarkTheme from '../assets/themes/one-dark.theme.css'
@@ -6,6 +7,10 @@ import ulyssesTheme from '../assets/themes/ulysses.theme.css'
 
 import darkPrismTheme from '../assets/themes/prismjs/dark.theme.css'
 import oneDarkPrismTheme from '../assets/themes/prismjs/one-dark.theme.css'
+
+export const dracula = () => {
+  return draculaTheme + '\n' + darkPrismTheme
+}
 
 export const dark = () => {
   return darkTheme + '\n' + darkPrismTheme
